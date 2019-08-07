@@ -18,13 +18,15 @@
 </head>
 
 <body>
-    <div class="content">
-      <h1 class="title">{{ config['title'] }}</h1>
-      <a class="link" href="/tasks">Go to Task List</a>
-      <div class="editor">
-        <div id="root"></div>
-      </div>
+  <div class="content">
+    <nav class="top-nav">
+      <h1 class="title" style="margin-bottom: 0px !important;">{{ config['title'] }}</h1>
+      <a href="/tasks" style="padding-bottom: 2px; margin-left: 1em;">Go to Task List</a>
+    </nav>
+    <div class="editor">
+      <div id="root"></div>
     </div>
+  </div>
 
     <script>
         window.editorInterfaces = {{ config['editor']['interfaces'] | safe }};

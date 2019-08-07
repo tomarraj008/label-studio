@@ -4,6 +4,12 @@ body {
   color: #333;
 }
 
+.top-nav {
+  display: flex;
+  align-items: flex-end;
+  margin: 2em 0.5em;
+}
+
 table {
   border: 1px solid #ccc;
   margin: 0 auto;
