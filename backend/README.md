@@ -7,7 +7,7 @@ part. By default, the backend uses label tool scripts from ../build.
 
 ## Linux & Ubuntu guide
 
-1 Install python and virtualenv. We recommend to use python 3.6, but probably python 2 solution will work too.  
+1 Install python and virtualenv. We recommend to use python 3.6, but probably python 2 solution will work too.
 ```
 apt install python3.6
 pip3 install virtualenv
@@ -83,19 +83,11 @@ build_path - this points to the directory with js, css and other media from Edit
   "editor": {
     "build_path": "../build/static",
     "debug": false,
-    "interfaces": [
-      "basic",
-      "panel",
-      "submit",
-      "submit:load",
-      "side-column",
-      "submit:skip",
-      "submit:check-empty",
-      "predictions:hide"
-    ],
+    "interfaces": ["basic", "panel", "submit", "submit:load", "side-column", 
+                   "submit:skip", "submit:check-empty", "predictions:hide"
+    ]
   },  
 ```
-
 
 * Name of your service for web
 ```
@@ -108,4 +100,4 @@ build_path - this points to the directory with js, css and other media from Edit
   "debug": true,
 ```
 
-* Python logger settings are concentrated in "logger" dict.   
+* Python logger settings are concentrated in *logger.json*.
